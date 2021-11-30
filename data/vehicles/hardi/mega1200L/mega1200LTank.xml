@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="fillableImplement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Mega 5000L Tank-ME</name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/hardi/mega1200L/mega1200L.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_sprayerTank</function>
+        </functions>
+        <image>$data/vehicles/hardi/mega1200L/store_mega1200LTank.png</image>
+        <price>4000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>HARDI</brand>
+        <category>sprayers</category>
+        <shopHeight>2.2</shopHeight>
+        <shopTranslationOffset>0 -0.006 0</shopTranslationOffset>
+        <shopRotationOffset>-0.534 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>468736</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>90624</indexBufferMemoryUsage>
+        <textureMemoryUsage>2031616</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_sprayerTank</typeDesc>
+        <filename>$data/vehicles/hardi/mega1200L/mega1200LTank.i3d</filename>
+        <size width="2.5" length="2" lengthOffset="0"/>
+        <components>
+            <component centerOfMass="0 0.25 0" solverIterationCount="10" mass="350" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" needsLowering="false" allowsLowering="true" lowerRotLimitScale="0 0 0" lowerTransLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0" >
+                <distanceToGround lower="0.35" upper="0.75" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="electric"  node="electric"  length="0.7" diameter="0.008" straighteningFactor="0.5" adapterNode="electric_connector">
+           <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+
+        <hose inputAttacherJointIndices="1" type="TOOL_CONNECTOR_BOTTOM_01" node="bottomPipe01" length="1.3" diameter="0.046" isTwoPointHose="true" straighteningFactor="7">
+            <objectChange node="bottomPipe01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="TOOL_CONNECTOR_BOTTOM_02" node="bottomPipe02" length="1.3" diameter="0.040" isTwoPointHose="true" straighteningFactor="3" hoseType="DEFAULT">
+            <objectChange node="bottomPipe02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="smallWheel01" filename="$data/shared/assets/smallWheel01.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="smallWheel02" filename="$data/shared/assets/smallWheel01.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="smallWheel03" filename="$data/shared/assets/smallWheel01.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="smallWheel04" filename="$data/shared/assets/smallWheel01.i3d" />
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <defaultLights>
+            <defaultLight shaderNode="defaultLight_static" lightTypes="0" />
+        </defaultLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlateFront" position="FRONT" preferedType="SQUARISH" placementArea="0.15 0.3 0.15 0.3"/>
+    </licensePlates>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="6" offset="0 0 0" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="5000">
+                        <exactFillRootNode node="exactFillRootNode"/>
+                        <measurementNodes>
+                            <measurementNode node="fillMeasurementNode"/>
+                        </measurementNodes>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeTrigger" emptySpeed="200" fillUnitIndex="1" allowAIDischarge="true">
+            <info width="1.0" length="0.5" zOffset="0.4" />
+            <trigger node="dischargeTrigger" />
+        </dischargeNode>
+    </dischargeable>
+
+    <sprayer allowsSpraying="false" />
+
+    <ai>
+        <agentAttachment width="2.0" height="1.5" length="1.7" lengthOffset="0.05"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1" maxX="1" minZ="-0.7" maxZ="0.85" yOffset="0.35" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="megaFronttank1500L_mat" baseNode="mega1200LTank_vis">
+            <shaderParameter name="colorMat0" value="HARDI_YELLOW"/>
+            <shaderParameter name="colorMat1" value="HARDI_RED"/>
+        </material>
+    </baseMaterial>
+
+    <i3dMappings>
+        <i3dMapping id="mega1200LTank_main_component1" node="0>" />
+        <i3dMapping id="mega1200LTank_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="topReferenceNode" node="0>0|0|1" />
+        <i3dMapping id="electric" node="0>0|0|2|0" />
+        <i3dMapping id="electric_detached" node="0>0|0|2|0|0" />
+        <i3dMapping id="electric_connector" node="0>0|0|2|0|0|0" />
+        <i3dMapping id="bottomPipe01" node="0>0|0|2|1" />
+        <i3dMapping id="bottomPipe01_detached" node="0>0|0|2|1|0" />
+        <i3dMapping id="bottomPipe02" node="0>0|0|2|2" />
+        <i3dMapping id="bottomPipe02_detached" node="0>0|0|2|2|0" />
+        <i3dMapping id="defaultLight_static" node="0>0|1|0|0" />
+        <i3dMapping id="exactFillRootNode" node="0>0|2|0" />
+        <i3dMapping id="dischargeTrigger" node="0>0|2|1" />
+        <i3dMapping id="fillMeasurementNode" node="0>0|2|2" />
+        <i3dMapping id="smallWheel01" node="0>0|4|0" />
+        <i3dMapping id="smallWheel02" node="0>0|4|1" />
+        <i3dMapping id="smallWheel03" node="0>0|4|2" />
+        <i3dMapping id="smallWheel04" node="0>0|4|3" />
+        <i3dMapping id="licensePlateFront" node="0>0|4|4" />
+    </i3dMappings>
+</vehicle>
