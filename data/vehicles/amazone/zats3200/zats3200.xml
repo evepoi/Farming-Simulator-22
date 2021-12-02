@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>ZA-TS 10000-ME</name>
+        <name>ZA-TS 8000-ME</name>
         <specs>
             <workingWidth>42.0</workingWidth>
             <combination filterCategory="weights" filterSpec="weight" filterSpecMin="1500" filterSpecMax="1600"/>
@@ -12,7 +12,7 @@
             <function>$l10n_function_fertilizer</function>
         </functions>
         <image>$data/vehicles/amazone/zats3200/store_zats3200.png</image>
-        <price>30000</price>
+        <price>25000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>AMAZONE</brand>
@@ -140,7 +140,7 @@
             <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
                 <fillUnits>
                     <unloading width="11" offset="0 0 0" />
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="10000" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="fertilizer" capacity="5000" >
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>
                 </fillUnits>
