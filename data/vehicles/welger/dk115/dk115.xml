@@ -583,7 +583,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="10000" allowAILoading="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="15000" allowAILoading="true">
                         <exactFillRootNode node="exactFillRootNode" />
                         <autoAimTargetNode node="fillAutoAimTarget" startZ="3.7" endZ="0.5" invert="false" startPercentage="25"/>
                     </fillUnit>
