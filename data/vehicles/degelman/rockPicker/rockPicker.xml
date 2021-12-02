@@ -13,7 +13,7 @@
         </functions>
         <rotation>0</rotation>
         <image>$data/vehicles/degelman/rockPicker/store_rockPicker.png</image>
-        <price>40000</price>
+        <price>25000</price>
         <lifetime>600</lifetime>
         <brand>DEGELMAN</brand>
         <category>stonePickers</category>
@@ -256,7 +256,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="STONE" capacity="10000" />
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="STONE" capacity="4000" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
