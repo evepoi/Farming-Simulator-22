@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>Mega 10000L-ME</name>
+        <name>Mega 3000L-ME</name>
         <specs>
             <workingWidth>24.0</workingWidth>
             <combination xmlFilename="$data/vehicles/hardi/mega1200L/mega1200LTank.xml"/>
@@ -12,7 +12,7 @@
             <function>$l10n_function_sprayer</function>
         </functions>
         <image>$data/vehicles/hardi/mega1200L/store_mega1200L.png</image>
-        <price>15000</price>
+        <price>34500</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>HARDI</brand>
@@ -412,7 +412,7 @@
             <fillUnitConfiguration>
                 <fillUnits>
                     <unloading width="7" offset="0 0 0" />
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="10000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="3000">
                         <exactFillRootNode node="exactFillRootNode"/>
                         <fillLevelAnimation name="fillLevelAnimation"/>
                     </fillUnit>
