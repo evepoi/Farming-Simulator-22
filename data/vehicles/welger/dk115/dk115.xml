@@ -15,7 +15,7 @@
             <storePack>STARTER_ANIMALS</storePack>
         </storePacks>
         <image>$data/vehicles/welger/dk115/store_dk115.png</image>
-        <price>20000</price>
+        <price>11500</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>WELGER</brand>
@@ -583,7 +583,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="30000" allowAILoading="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="10000" allowAILoading="true">
                         <exactFillRootNode node="exactFillRootNode" />
                         <autoAimTargetNode node="fillAutoAimTarget" startZ="3.7" endZ="0.5" invert="false" startPercentage="25"/>
                     </fillUnit>
