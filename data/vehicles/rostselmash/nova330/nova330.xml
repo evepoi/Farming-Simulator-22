@@ -15,7 +15,7 @@
             <function>$l10n_function_combineNeedsCutter</function>
         </functions>
         <image>$data/vehicles/rostselmash/nova330/store_nova330.png</image>
-        <price>90000</price>
+        <price>75000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>ROSTSELMASH</brand>
@@ -332,7 +332,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="10000" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="8000" >
                         <exactFillRootNode node="exactFillRootNode"/>
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
