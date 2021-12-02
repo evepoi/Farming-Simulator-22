@@ -6,15 +6,15 @@
         <attributes>
             <set path="vehicle.storeData.name" value="$l10n_fillType_fertilizer"/>
             <set path="vehicle.storeData.image" value="$data/objects/bigBagPallet/fertilizer/store_bigBagPallet_fertilizer.png"/>
-            <set path="vehicle.storeData.price" value="2000"/>
+            <set path="vehicle.storeData.price" value="1920"/>
             <set path="vehicle.storeData.brand" value="CORTEVA"/>
             <set path="vehicle.storeData.functions.function" value="$l10n_function_bigBagFertilizer"/>
             <set path="vehicle.storeData.financeCategory" value="PURCHASE_FERTILIZER"/>
 
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="fertilizer"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillType" value="fertilizer"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="80000"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="80000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="50000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="50000"/>
          </attributes>
     </parentFile>
 
