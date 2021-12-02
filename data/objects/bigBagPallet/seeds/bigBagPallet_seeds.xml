@@ -6,15 +6,15 @@
         <attributes>
             <set path="vehicle.storeData.name" value="$l10n_fillType_seeds"/>
             <set path="vehicle.storeData.image" value="$data/objects/bigBagPallet/seeds/store_bigBagPallet_seeds.png"/>
-            <set path="vehicle.storeData.price" value="1500"/>
+            <set path="vehicle.storeData.price" value="900"/>
             <set path="vehicle.storeData.brand" value="PIONEER"/>
             <set path="vehicle.storeData.financeCategory" value="PURCHASE_SEEDS"/>
             <set path="vehicle.storeData.functions.function" value="$l10n_function_bigBagSeeds"/>
 
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="seeds"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillType" value="seeds"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="50000"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="50000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="30000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="30000"/>
          </attributes>
     </parentFile>
 

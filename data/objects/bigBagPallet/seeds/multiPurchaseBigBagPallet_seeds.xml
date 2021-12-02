@@ -11,7 +11,7 @@
             <function>$l10n_function_bigBagSeeds</function>
         </functions>
         <image>$data/objects/bigBagPallet/seeds/store_bigBagPallet_seeds.png</image>
-        <price>1500</price>
+        <price>900</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
@@ -40,7 +40,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit fillTypes="seeds" capacity="50000" />
+                    <fillUnit fillTypes="seeds" capacity="30000" />
                 </fillUnits>
             </fillUnitConfiguration>
         </fillUnitConfigurations>
@@ -68,13 +68,13 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="1500"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="3000"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="4500"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="6000"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="7500"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="9000"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="10500"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="900"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="1800"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="2700"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="3600"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="4500"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="5400"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="6300"/>
     </multipleItemPurchaseAmountConfigurations>
 
 </vehicle>
