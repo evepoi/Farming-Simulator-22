@@ -15,7 +15,7 @@
             <weight ignore="true"/>
         </specs>
         <image>$data/objects/pallets/pioneer/store_pioneerPallet.png</image>
-        <price>2000</price>
+        <price>950</price>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <rotation>0</rotation>
@@ -64,7 +64,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="seeds" capacity="100000" startFillType="seeds" startFillLevel="100000" ignoreFillLimit="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="seeds" capacity="50000" startFillType="seeds" startFillLevel="50000" ignoreFillLimit="true">
                         <fillRootNode node="0>" />
                         <fillLevelAnimation name="seedBagAnimation" resetOnEmpty="true" />
                     </fillUnit>
