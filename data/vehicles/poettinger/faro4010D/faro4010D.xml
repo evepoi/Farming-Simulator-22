@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="forageWagon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>FARO 4010 D-ME</name>
+        <specs>
+            <neededPower>130</neededPower>
+        </specs>
+        <functions>
+            <function>$l10n_function_forageWagon</function>
+        </functions>
+        <image>$data/vehicles/poettinger/faro4010D/store_faro4010D.png</image>
+        <price>70500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>POETTINGER</brand>
+        <category>loaderWagons</category>
+        <shopTranslationOffset>0 0.089 0</shopTranslationOffset>
+        <shopRotationOffset>-1.047 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>4480768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1260288</indexBufferMemoryUsage>
+        <textureMemoryUsage>2883584</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_forageWagon</typeDesc>
+        <filename>$data/vehicles/poettinger/faro4010D/faro4010D.i3d</filename>
+        <size width="3.5" length="9.5" lengthOffset="0.8"/>
+        <speedLimit value="17" />
+        <components maxMass="12500">
+            <component centerOfMass="0 0.6 1" solverIterationCount="10" mass="5300" />
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="220" />
+            <joint component1="1" component2="2" node="pickupComponentJoint" rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.3" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.2" repr="wheel01" forcePointRatio="0.4" initialCompression="25" suspTravel="0.12" spring="36" damper="20" yOffset="0.025" />
+                        <wheelChock parkingNode="wheelChock03" />
+                        <wheelChock parkingNode="wheelChock04" isInverted="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.2" repr="wheel02" forcePointRatio="0.4" initialCompression="25" suspTravel="0.12" spring="36" damper="20" yOffset="0.025" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.2" repr="wheel03" forcePointRatio="0.4" initialCompression="25" suspTravel="0.12" spring="36" damper="20" yOffset="0.025" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.2" repr="wheel04" forcePointRatio="0.4" initialCompression="25" suspTravel="0.12" spring="36" damper="20" yOffset="0.025" />
+                    </wheel>
+
+                    <!-- pickup -->
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true">
+                        <physics rotMin="-10" rotMax="10" restLoad="0.15" repr="wheelAxisLeft"  driveNode="wheelLeftBack"  useReprDirection="true" radius="0.21" forcePointRatio="0.1" initialCompression="30" suspTravel="0.03" spring="20" damper="50" rotationDamping="0.0002" brakeFactor="0" versatileYRot="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false">
+                        <physics rotMin="-10" rotMax="10" restLoad="0.15" repr="wheelAxisRight" driveNode="wheelRightBack" useReprDirection="true" radius="0.21" forcePointRatio="0.1" initialCompression="30" suspTravel="0.03" spring="20" damper="50" rotationDamping="0.0002" brakeFactor="0" versatileYRot="true"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.031" />
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.031" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.031" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.031" />
+                    </wheel>
+
+                    <!-- pickup -->
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="BKT" saveId="BKT_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="0.025" />
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="0.025" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="0.025" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="0.025" />
+                    </wheel>
+
+                    <!-- pickup -->
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="VREDESTEIN" saveId="VREDESTEIN_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationPro/560_45R22_5.xml">
+                        <physics yOffset="0.032" />
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationPro/560_45R22_5.xml">
+                        <physics yOffset="0.032" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationPro/560_45R22_5.xml">
+                        <physics yOffset="0.032" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationPro/560_45R22_5.xml">
+                        <physics yOffset="0.032" />
+                    </wheel>
+
+                    <!-- pickup -->
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color0>SHARED_DA_METAL_BLACK</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheel01"        filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.25 0.335 0.335"/>
+            <hub linkNode="wheel02"        filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false"  scale="0.25 0.335 0.335"/>
+            <hub linkNode="wheel03"        filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.25 0.335 0.335"/>
+            <hub linkNode="wheel04"        filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false"  scale="0.25 0.335 0.335"/>
+            <hub linkNode="wheelLeftBack"  filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.08 0.1 0.1" offset="-0.005">
+                <color0 material="18">SHARED_WHITE1</color0>
+                <color1>-</color1>
+            </hub>
+            <hub linkNode="wheelRightBack" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.08 0.1 0.1" offset="-0.005">
+                <color0 material="18">SHARED_WHITE1</color0>
+                <color1>-</color1>
+            </hub>
+        </hubs>
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="pickupRoll" radius="0.1" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" rotateOnlyIfFillLevelIncreased="true" />
+    </speedRotatingParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailerLow" attacherHeight="0.637" />
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <brakeForce force="0.7" maxForce="1.3" maxForceMass="12500"/>
+    </attachable>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputNode" detachNode="ptoDetachNode" aboveAttacher="true" filename="$data/shared/assets/powerTakeOffs/walterscheidWWZ.xml"/>
+    </powerTakeOffs>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.6" diameter="0.015" straighteningFactor="2">
+           <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut"  node="hydraulicOut01"  length="1.6" diameter="0.015" straighteningFactor="2">
+           <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn02"  length="1.6" diameter="0.015" straighteningFactor="2">
+           <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric" node="electricIn01" length="1.6" diameter="0.01" straighteningFactor="2">
+            <objectChange node="electricIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow"  node="airIn01"  length="1.6" diameter="0.012" straighteningFactor="2">
+           <objectChange node="airIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airOut01" length="1.6" diameter="0.012" straighteningFactor="2">
+            <objectChange node="airOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0"   linkNode="chockSupport"                   filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+        <dynamicallyLoadedPart node="0"   linkNode="chockSupport1"                  filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicIn01_detachedAdapter"  filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicOut01_detachedAdapter" filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicIn02_detachedAdapter"  filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|1" linkNode="electricIn01_detachedAdapter"   filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|2" linkNode="airIn01_detachedAdapter"        filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|3" linkNode="airOut01_detachedAdapter"       filename="$data/shared/connectionHoses/connectors.i3d" />
+    </dynamicallyLoadedParts>
+
+    <powerConsumer ptoRpm="470" neededMinPtoPower="45" neededMaxPtoPower="50">
+        <speedLimitModifier offset="-10" minPowerHp="0"   maxPowerHp="100"/>
+        <speedLimitModifier offset="-8"  minPowerHp="100" maxPowerHp="110"/>
+        <speedLimitModifier offset="-4"  minPowerHp="110" maxPowerHp="120"/>
+    </powerConsumer>
+
+    <lights>
+        <sharedLight linkNode="rearLight33_left"      filename="$data/shared/assets/lights/lizard/rearLight33_left.xml" />
+        <sharedLight linkNode="rearLight33_right"     filename="$data/shared/assets/lights/lizard/rearLight33_right.xml" />
+        <sharedLight linkNode="frontLight06White_01"  filename="$data/shared/assets/lights/lizard/frontLight06White.xml" />
+        <sharedLight linkNode="frontLight06White_02"  filename="$data/shared/assets/lights/lizard/frontLight06White.xml" />
+        <sharedLight linkNode="whiteRound_02_01"      filename="$data/shared/assets/reflectors/lizard/whiteRound_02.xml" />
+        <sharedLight linkNode="whiteRound_02_02"      filename="$data/shared/assets/reflectors/lizard/whiteRound_02.xml" />
+        <sharedLight linkNode="redTriangle_02_01"     filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml" />
+        <sharedLight linkNode="redTriangle_02_02"     filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml" />
+        <sharedLight linkNode="sideMarker05Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_03" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_04" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_05" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_06" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_07" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05White_01"  filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" />
+        <sharedLight linkNode="sideMarker05White_02"  filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" />
+        <sharedLight linkNode="sideMarker05White_03"  filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" lightTypes="1" />
+        <sharedLight linkNode="sideMarker05White_04"  filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" lightTypes="1" />
+        <sharedLight linkNode="yellowRound_03_01"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_02"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_03"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_04"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_05"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_06"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_07"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="yellowRound_03_08"     filename="$data/shared/assets/reflectors/lizard/yellowRound_03.xml" />
+        <sharedLight linkNode="plateNumberLight01"    filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+
+        <realLights>
+            <high>
+                <light node="backLightsHigh1"       lightTypes="0" />
+                <light node="licensePlateLightHigh" lightTypes="0" />
+                <light node="workLightBackHigh1" lightTypes="1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+                <reverseLight node="reverseLightHigh1" />
+            </high>
+        </realLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" />
+    </licensePlates>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReferenceNode" threshold="0.3" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="forageWagon" functionName="processForageWagonArea" disableBackwards="true" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="drawbar"    startTime="0.2" endTime="1.5" startRot="2.9 0 0" endRot="6 0 0" direction="1" tangentType="spline" />
+            <part node="supportArm" startTime="0.8" endTime="1.5" startRot="0 0 0" endRot="0 0 -174.410" direction="1" tangentType="spline" />
+            <part node="supportCol" startTime="0.2" endTime="1.3" startTrans="0 0.8 0" endTrans="0 -0.05 0" direction="1" />
+
+            <part node="drawbar"    startTime="0.2" endTime="1.5" startRot="2.9 0 0" endRot="6 0 0" direction="-1" tangentType="spline" />
+            <part node="supportArm" startTime="0.8" endTime="1.5" startRot="0 0 0" endRot="0 0 -174.410" direction="-1" tangentType="spline" />
+            <part node="supportCol" startTime="0.2" endTime="1.3" startTrans="0 0.8 0" endTrans="0 -0.05 0" direction="-1" />
+
+            <sound template="clackVar5"  startTime="1"    direction="-1"    volumeScale="1.3" pitchScale="1"   linkNode="attacherJoint"/>
+            <sound template="clackVar1"  startTime="1.2"  direction="1"     volumeScale="1.9" pitchScale="1.2" linkNode="attacherJoint"/>
+            <sound template="latchSmall" startTime="1.45"                   volumeScale="0.1" pitchScale="2"   linkNode="attacherJoint"/>
+            <sound template="clackVar5"  startTime="1.3"  direction="-1"    volumeScale="1.3" pitchScale="0.7" linkNode="attacherJoint"/>
+            <sound template="clackVar1"  startTime="1"    direction="1"     volumeScale="1.3" pitchScale="0.9" linkNode="attacherJoint"/>
+        </animation>
+        <animation name="rotatePickup">
+            <part node="pickupComponentJoint" startTime="0" endTime="1" startRot="0 0 0" endRot="15 0 0" />
+            <part                             startTime="0" endTime="1" componentJointIndex="1" startRotLimit="0 0 0" endRotLimit="15 0 0"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="0.9"  direction="-1" volumeScale="1.2" pitchScale="1"   linkNode="attacherJoint"/>
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="0.9"  direction="1"  volumeScale="0.3" pitchScale="1"   linkNode="attacherJoint"/>
+            <sound template="clackVar6"             startTime="0.9"                 direction="1"  volumeScale="0.6" pitchScale="0.5" linkNode="attacherJoint"/>
+            <sound template="clackVar6"             startTime="0.01"                direction="-1" volumeScale="1.2" pitchScale="0.8" linkNode="attacherJoint"/>
+            <sound template="sheetImp02"            startTime="0.01"                direction="-1" volumeScale="1.5" pitchScale="1.4" linkNode="attacherJoint"/>
+        </animation>
+        <animation name="tipAnimationBack">
+            <part node="backDoorArm01" startTime="0" endTime="3" startRot="0 0 0" endRot="65 0 0" />
+
+            <sound template="defaultHydraulicSound" startTime="0.1"  endTime="2.99" volumeScale="2"   pitchScale="0.8" fadeIn="0.1" fadeOut="0.2"/>
+            <sound template="clackVar6"             startTime="0.01" direction="1"  volumeScale="2"   pitchScale="0.8" />
+            <sound template="cylinderPunch"         startTime="0.01" direction="1"  volumeScale="1"   pitchScale="1.1" />
+            <sound template="metalClose"            startTime="0.1"  direction="-1" volumeScale="2"   pitchScale="0.6" />
+            <sound template="cylinderPunch"         startTime="0.1"  direction="-1" volumeScale="1.5" pitchScale="1.1" />
+            <sound template="clackVar6"             startTime="0.01" direction="-1" volumeScale="2"   pitchScale="0.8" />
+            <sound template="cylinderPunch"         startTime="2.9"  direction="1"  volumeScale="1.4" pitchScale="1.1" />
+            <sound template="clackVar4"             startTime="2.99" direction="1"  volumeScale="3"   pitchScale="0.6"/>
+            <sound template="clackVar6"             startTime="2.99" direction="1"  volumeScale="2"   pitchScale="0.7"/>
+            <sound template="clackVar6"             startTime="2.99" direction="-1" volumeScale="2"   pitchScale="0.9" />
+            <sound template="thudVar2"              startTime="2.99" direction="-1" volumeScale="2"   pitchScale="0.8" />
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="drawbar" playSound="true">
+                <controls axis="AXIS_DRAWBAR" invertAxis="false" mouseSpeedFactor="0.3" iconName="DRAWBAR_ROTATE_X" />
+                <rotation rotSpeed="10" rotAcceleration="100" rotMax="20" rotMin="-12" startRot="-5" rotationAxis="1"/>
+                <inputAttacherJoint value="true" />
+                <dependentPart node="drawbarHydraulic" />
+                <powerTakeOffs indices="1" />
+            </movingTool>
+            <movingTool node="pickupComponentJoint" playSound="true" wheelIndices="3 4">
+                <componentJoint index="1" />
+            </movingTool>
+            <movingTool node="backDoorArm01" playSound="true">
+                <dependentPart node="backDoor02" />
+                <dependentPart node="backDoorHydraulic" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="wheelAxisLeft_vis" referenceFrame="wheelAxisLeft" limitedAxis="2" isActiveDirty="true" maxUpdateDistance="100"/>
+            <movingPart node="wheelAxisRight_vis" referenceFrame="wheelAxisRight" limitedAxis="2" isActiveDirty="true" maxUpdateDistance="100"/>
+            <movingPart node="drawbarHydraulic" referencePoint="drawbarHydraulicRef" referenceFrame="drawbarHydraulicRef">
+                <translatingPart node="drawbarHydraulicPunch" />
+            </movingPart>
+            <movingPart node="pickupArm01" referencePoint="pickupArm01Ref" referenceFrame="faro4010D_main_component1" isActiveDirty="true" maxUpdateDistance="100">
+                <dependentPart node="pickup" />
+            </movingPart>
+            <movingPart node="pickup" localReferencePoint="pickupArm02" referencePoint="pickupArm02Ref" referenceFrame="pickupRefFrame">
+                <dependentPart node="pickupArm02" />
+            </movingPart>
+            <movingPart node="pickupArm02" referencePoint="pickupArm02Ref" referenceFrame="pickupArm02Ref"/>
+            <movingPart node="backDoor02" localReferencePoint="backDoor01" referencePoint="backDoor01Ref" referenceFrame="backDoor02RefFrame">
+                <dependentPart node="backDoor01" />
+            </movingPart>
+            <movingPart node="backDoor01" referencePoint="backDoor01Ref" referenceFrame="backDoor01Ref"/>
+            <movingPart node="backDoorHydraulic" referencePoint="backDoorHydraulicRef" referenceFrame="backDoorHydraulicRef">
+                <translatingPart node="backDoorHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="pickupRollJointRot" referencePoint="pickupRollJointRotRef" localReferencePoint="pickupRollJointRotLocalRef" referenceFrame="pickupRollJointRotRefFrame" isActiveDirty="true" maxUpdateDistance="100"/>
+        </movingParts>
+
+        <sounds>
+            <actionSound template="hydraulicLayerTone" pitchScale="0.8" volumeScale="1.1" linkNode="drawbarHydraulic" actionNames="TRANSLATING_POS TRANSLATING_NEG" nodes="drawbarHydraulic"/>
+            <actionSound template="clackVar6"          pitchScale="0.8" volumeScale="1"   linkNode="drawbar"          actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="drawbar"/>
+            <actionSound template="sheetImp02"         pitchScale="1.3" volumeScale="1.2" linkNode="drawbar"          actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="drawbar"/>
+            <actionSound template="cylinderPunch"      pitchScale="1"   volumeScale="0.5" linkNode="drawbar"          actionNames="TOOL_MOVE_END_POS_LIMIT"         nodes="drawbar"/>
+            <actionSound template="clackVar6"          pitchScale="0.7" volumeScale="1.8" linkNode="drawbar"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="drawbar"/>
+            <actionSound template="clackVar4"          pitchScale="1.3" volumeScale="0.5" linkNode="drawbar"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="drawbar"/>
+            <actionSound template="sheetImp02"         pitchScale="0.8" volumeScale="2"   linkNode="drawbar"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="drawbar"/>
+            <actionSound template="thudVar2"           pitchScale="0.8" volumeScale="2.5" linkNode="drawbar"          actionNames="TOOL_MOVE_END_NEG_LIMIT"         nodes="drawbar"/>
+        </sounds>
+    </cylindered>
+
+    <pickup>
+        <animation name="rotatePickup" isDefaultLowered="false"/>
+    </pickup>
+
+    <fillUnit>
+        <fillUnitConfigurations title="$l10n_configuration_silageAdditives">
+            <fillUnitConfiguration name="$l10n_configuration_valueNo" price="0">
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="50000" allowAILoading="true">
+                        <exactFillRootNode node="exactFillRootNode" />
+                        <autoAimTargetNode node="autoAimTargetNode" startZ="1.688" endZ="-1.538" invert="false" startPercentage="28"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="$l10n_configuration_valueYes" price="2000">
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="50000" allowAILoading="true">
+                        <exactFillRootNode node="exactFillRootNode" />
+                        <autoAimTargetNode node="autoAimTargetNode" startZ="1.688" endZ="-1.538" invert="false" startPercentage="28"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SILAGE_ADDITIVE" capacity="10" showInShop="false" uiPrecision="2">
+                        <exactFillRootNode node="exactFillRootNodeAdditives" />
+                    </fillUnit>
+                </fillUnits>
+
+                <objectChange node="silageAdditivesTank_vis" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" fillUnitIndex="1" maxDelta="0.1" maxAllowedHeapAngle="20" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadNode" width="1.4" length="1.0" />
+            </unloadInfo>
+        </unloadInfos>
+
+        <loadInfos>
+            <loadInfo>
+                <node node="loadNode" width="1.4" length="1.0" />
+            </loadInfo>
+        </loadInfos>
+    </fillVolume>
+
+    <trailer>
+        <trailerConfigurations>
+            <trailerConfiguration name="$l10n_configuration_valueDefault">
+                <trailer>
+                    <tipSide name="$l10n_info_tipSideBack" dischargeNodeIndex="1">
+                        <animation name="tipAnimationBack" speedScale="1.0" startTipTime="0.4" />
+                        <animationNodes>
+                            <animationNode node="floorGear01Decal" rotSpeed="-150"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+                            <animationNode node="floorGear02Decal" rotSpeed="-150"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+                            <animationNode node="roller01" rotSpeed="-1500"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3"/>
+                            <animationNode node="roller02" rotSpeed="-1500"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3"/>
+                            <animationNode class="ScrollingAnimation" node="scratchingFloorGeo" shaderParameterName="scrollPosition" scrollSpeed="0.02" scrollLength="4.558" />
+                        </animationNodes>
+                    </tipSide>
+                </trailer>
+            </trailerConfiguration>
+        </trailerConfigurations>
+    </trailer>
+
+    <dischargeable>
+        <dischargeNode node="dischargeNode" emptySpeed="1730" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
+            <info width="1.1" length="0.5" />
+
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="unloadingParticle" effectClass="ParticleEffect" materialType="unloadingParticle" fadeTime="0.5" delay="0.1" worldSpace="false" lifespan="0.11"/>
+                    <effectNode effectNode="unloadingEffect" materialType="unloading" fadeTime="0.5" extraDistanceNode="dischargeNode"/>
+                </effectNode>
+                <effectNode effectNode="smokeEffect"         materialType="unloadingSmoke" fadeTime="0.5"/>
+            </effects>
+            <dischargeStateSound template="dischargeLoop" pitchScale="1.0" volumeScale="0.7" fadeIn="0.5" fadeOut="1.7"/>
+        </dischargeNode>
+    </dischargeable>
+
+    <forageWagon workAreaIndex="1" fillUnitIndex="1" loadInfoIndex="1" maxPickupLitersPerSecond="350">
+        <additives fillUnitIndex="2" usage="0.0000275" fillTypes="GRASS_WINDROW" />
+        <fillVolume dischargeScrollSpeed="0 0 0.3" loadScrollSpeed="0 0 0.05"/>
+
+        <fillEffect>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="PICKUPIN" linkNode="pickupEffectNode">
+                <motionPathEffect textureFilename="$data/vehicles/poettinger/faro4010D/pickupEffectArray.dds" numRows="10" rowLength="10" minFade="0.15" shapeScale="0.85"/>
+            </effectNode>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="PICKUPIN" linkNode="liftupEffectNode">
+                <motionPathEffect textureFilename="$data/vehicles/poettinger/faro4010D/liftupEffectArray.dds" numRows="10" rowLength="10" delay="0.35" shapeScale="0.5"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="pickupSmokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1"/>
+            <effectNode effectClass="ParticleEffect" effectNode="pickupSmokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.2" worldSpace="false"/>
+        </fillEffect>
+
+        <startFillEffect fillStartDelay="0.4" fillStartFadeOff="2500">
+            <effectNode effectClass="TypedMotionPathEffect" effectType="PICKUPOUT" linkNode="pickupOutEffectNode">
+                <motionPathEffect textureFilename="$data/effects/pickup/sharedPickupArrayOUT.dds" numRows="4" rowLength="22" delay="0"/>
+            </effectNode>
+        </startFillEffect>
+    </forageWagon>
+
+    <turnOnVehicle>
+        <animationNodes>
+            <animationNode node="rotor01" rotSpeed="-650" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="rotor02" rotSpeed="450"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="turnOnGear01Decal" rotSpeed="200"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="turnOnGear02"      rotSpeed="-400" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="turnOnGear03Decal" rotSpeed="600"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="floorGear01Decal"  rotSpeed="-10"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode node="floorGear02Decal"  rotSpeed="-10"  rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="2" />
+            <animationNode class="ScrollingAnimation" node="chain01" shaderParameterName="offsetUV" scrollSpeed="-2" scrollLength="1" shaderParameterComponent="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode class="ScrollingAnimation" node="chain02" shaderParameterName="offsetUV" scrollSpeed="-2" scrollLength="1" shaderParameterComponent="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode class="ScrollingAnimation" node="scratchingFloorGeo" shaderParameterName="scrollPosition" scrollSpeed="0.001" scrollLength="4.558" />
+        </animationNodes>
+
+        <sounds>
+            <work template="FORAGE_WAGON_01" linkNode="faro4010D_main_component1" />
+        </sounds>
+    </turnOnVehicle>
+
+    <ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="7"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="2.7" height="3.8" length="7.3" lengthOffset="0.1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-2.8" maxZ="3.8" yOffset="0.95" />
+        <bendingNode minX="-1.15" maxX="1.15" minZ="-0.5" maxZ="1.0" yOffset="0" node="pickupComponentJoint"/>
+        <bendingNode minX="-1.4"  maxX="1.40" minZ="-1.2" maxZ="1.2" yOffset="0.4" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="faro4010D_mat" baseNode="faro4010_vis">
+            <shaderParameter name="colorMat0" value="POETTINGER_RED1"/>
+            <shaderParameter name="colorMat1" value="POETTINGER_YELLOW"/>
+            <shaderParameter name="colorMat2" value="POETTINGER_WHITE1"/>
+            <shaderParameter name="colorMat3" value="POETTINGER_YELLOW"/>
+            <shaderParameter name="colorMat4" value="POETTINGER_WHITE1"/>
+        </material>
+        <material name="faro4010D_K80drawbar_mat" baseNode="drawbar">
+            <shaderParameter name="colorMat0" value="POETTINGER_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="faro4010D_main_component1" node="0>" />
+        <i3dMapping id="faro4010_vis" node="0>0" />
+        <i3dMapping id="electricIn01" node="0>0|0|0|0" />
+        <i3dMapping id="airIn01" node="0>0|0|0|1" />
+        <i3dMapping id="airOut01" node="0>0|0|0|2" />
+        <i3dMapping id="hydraulicIn02" node="0>0|0|0|3" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|0|4" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|0|5" />
+        <i3dMapping id="electricIn01_detached" node="0>0|0|0|6" />
+        <i3dMapping id="electricIn01_detachedAdapter" node="0>0|0|0|6|0" />
+        <i3dMapping id="airIn01_detached" node="0>0|0|0|7" />
+        <i3dMapping id="airIn01_detachedAdapter" node="0>0|0|0|7|0" />
+        <i3dMapping id="airOut01_detached" node="0>0|0|0|8" />
+        <i3dMapping id="airOut01_detachedAdapter" node="0>0|0|0|8|0" />
+        <i3dMapping id="hydraulicIn02_detached" node="0>0|0|0|9" />
+        <i3dMapping id="hydraulicIn02_detachedAdapter" node="0>0|0|0|9|0" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|0|10" />
+        <i3dMapping id="hydraulicOut01_detachedAdapter" node="0>0|0|0|10|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|0|11" />
+        <i3dMapping id="hydraulicIn01_detachedAdapter" node="0>0|0|0|11|0" />
+        <i3dMapping id="ptoInputNode" node="0>0|0|1" />
+        <i3dMapping id="supportArm" node="0>0|0|2|0" />
+        <i3dMapping id="supportCol" node="0>0|0|2|1" />
+        <i3dMapping id="wheel01" node="0>0|1|0" />
+        <i3dMapping id="wheel02" node="0>0|1|1" />
+        <i3dMapping id="wheel03" node="0>0|1|2" />
+        <i3dMapping id="wheel04" node="0>0|1|3" />
+        <i3dMapping id="chockSupport" node="0>0|1|4" />
+        <i3dMapping id="wheelChock03" node="0>0|1|5" />
+        <i3dMapping id="chockSupport1" node="0>0|1|6" />
+        <i3dMapping id="wheelChock04" node="0>0|1|7" />
+        <i3dMapping id="whiteRound_02_01" node="0>0|2|0|0" />
+        <i3dMapping id="whiteRound_02_02" node="0>0|2|0|1" />
+        <i3dMapping id="sideMarker05White_01" node="0>0|2|0|2" />
+        <i3dMapping id="sideMarker05White_02" node="0>0|2|0|3" />
+        <i3dMapping id="sideMarker05White_03" node="0>0|2|0|4" />
+        <i3dMapping id="sideMarker05White_04" node="0>0|2|0|5" />
+        <i3dMapping id="redTriangle_02_01" node="0>0|2|0|6" />
+        <i3dMapping id="redTriangle_02_02" node="0>0|2|0|7" />
+        <i3dMapping id="sideMarker05Orange_01" node="0>0|2|0|8" />
+        <i3dMapping id="sideMarker05Orange_02" node="0>0|2|0|9" />
+        <i3dMapping id="sideMarker05Orange_03" node="0>0|2|0|10" />
+        <i3dMapping id="sideMarker05Orange_04" node="0>0|2|0|11" />
+        <i3dMapping id="sideMarker05Orange_05" node="0>0|2|0|12" />
+        <i3dMapping id="sideMarker05Orange_06" node="0>0|2|0|13" />
+        <i3dMapping id="sideMarker05Orange_07" node="0>0|2|0|14" />
+        <i3dMapping id="yellowRound_03_01" node="0>0|2|0|15" />
+        <i3dMapping id="yellowRound_03_02" node="0>0|2|0|16" />
+        <i3dMapping id="yellowRound_03_03" node="0>0|2|0|17" />
+        <i3dMapping id="yellowRound_03_04" node="0>0|2|0|18" />
+        <i3dMapping id="yellowRound_03_05" node="0>0|2|0|19" />
+        <i3dMapping id="yellowRound_03_06" node="0>0|2|0|20" />
+        <i3dMapping id="yellowRound_03_07" node="0>0|2|0|21" />
+        <i3dMapping id="yellowRound_03_08" node="0>0|2|0|22" />
+        <i3dMapping id="workLightBackHigh1" node="0>0|2|1" />
+        <i3dMapping id="workAreaStart" node="0>0|3|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|3|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|3|2" />
+        <i3dMapping id="pickupComponentJoint" node="0>0|4" />
+        <i3dMapping id="drawbar" node="0>0|5|0" />
+        <i3dMapping id="attacherJoint" node="0>0|5|0|1" />
+        <i3dMapping id="drawbarHydraulic" node="0>0|5|0|2" />
+        <i3dMapping id="drawbarHydraulicPunch" node="0>0|5|0|2|0" />
+        <i3dMapping id="pickupRollJointRotRef" node="0>0|5|0|4" />
+        <i3dMapping id="ptoDetachNode" node="0>0|5|0|6" />
+        <i3dMapping id="drawbarHydraulicRef" node="0>0|5|1" />
+        <i3dMapping id="pickupArm01" node="0>0|5|2" />
+        <i3dMapping id="wheelAxisLeft_vis" node="0>0|5|2|0|0" />
+        <i3dMapping id="wheelAxisRight_vis" node="0>0|5|2|1|0" />
+        <i3dMapping id="pickupArm02Ref" node="0>0|5|2|2" />
+        <i3dMapping id="rotor02" node="0>0|5|3" />
+        <i3dMapping id="pickupRefFrame" node="0>0|5|4" />
+        <i3dMapping id="pickup" node="0>0|5|5" />
+        <i3dMapping id="pickupRollArm" node="0>0|5|5|0" />
+        <i3dMapping id="pickupRoll" node="0>0|5|5|0|0" />
+        <i3dMapping id="pickupRollJointRotRefFrame" node="0>0|5|5|0|2" />
+        <i3dMapping id="pickupRollJointRot" node="0>0|5|5|0|2|0" />
+        <i3dMapping id="pickupRollJointRotLocalRef" node="0>0|5|5|0|2|0|1" />
+        <i3dMapping id="pickupArm02" node="0>0|5|5|1" />
+        <i3dMapping id="rotor01" node="0>0|5|5|2" />
+        <i3dMapping id="chain01" node="0>0|5|5|3|2" />
+        <i3dMapping id="pickupEffectNode" node="0>0|5|5|4|0" />
+        <i3dMapping id="backDoorArm01" node="0>0|5|6" />
+        <i3dMapping id="backDoor01Ref" node="0>0|5|6|0" />
+        <i3dMapping id="backDoorHydraulicRef" node="0>0|5|6|1" />
+        <i3dMapping id="backDoor02RefFrame" node="0>0|5|7" />
+        <i3dMapping id="backDoor02" node="0>0|5|8" />
+        <i3dMapping id="backDoor01" node="0>0|5|8|0" />
+        <i3dMapping id="rearLight33_left" node="0>0|5|8|0|0|0" />
+        <i3dMapping id="rearLight33_right" node="0>0|5|8|0|0|1" />
+        <i3dMapping id="plateNumberLight01" node="0>0|5|8|0|0|2" />
+        <i3dMapping id="backLightsHigh1" node="0>0|5|8|0|1|0" />
+        <i3dMapping id="licensePlateLightHigh" node="0>0|5|8|0|1|1" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|5|8|0|2|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|5|8|0|2|1" />
+        <i3dMapping id="reverseLightHigh1" node="0>0|5|8|0|3|0" />
+        <i3dMapping id="licensePlate" node="0>0|5|8|0|4" />
+        <i3dMapping id="frontLight06White_01" node="0>0|5|8|1|0" />
+        <i3dMapping id="frontLight06White_02" node="0>0|5|8|1|1" />
+        <i3dMapping id="backDoorHydraulic" node="0>0|5|9" />
+        <i3dMapping id="backDoorHydraulicPunch" node="0>0|5|9|0" />
+        <i3dMapping id="turnOnGear01Decal" node="0>0|5|10" />
+        <i3dMapping id="turnOnGear02" node="0>0|5|11" />
+        <i3dMapping id="turnOnGear03Decal" node="0>0|5|12" />
+        <i3dMapping id="floorGear01Decal" node="0>0|5|13" />
+        <i3dMapping id="floorGear02Decal" node="0>0|5|14" />
+        <i3dMapping id="roller01" node="0>0|5|15" />
+        <i3dMapping id="roller02" node="0>0|5|16" />
+        <i3dMapping id="scratchingFloorGeo" node="0>0|5|17|0" />
+        <i3dMapping id="unloadingEffect" node="0>0|6|0|0" />
+        <i3dMapping id="smokeEffect" node="0>0|6|0|1" />
+        <i3dMapping id="unloadingParticle" node="0>0|6|1|0" />
+        <i3dMapping id="liftupEffectNode" node="0>0|6|2" />
+        <i3dMapping id="pickupSmokeEmitter" node="0>0|6|3" />
+        <i3dMapping id="pickupOutEffectNode" node="0>0|6|4" />
+        <i3dMapping id="fillVolume" node="0>0|7|0" />
+        <i3dMapping id="autoAimTargetNode" node="0>0|7|1" />
+        <i3dMapping id="exactFillRootNode" node="0>0|7|2" />
+        <i3dMapping id="loadNode" node="0>0|7|3" />
+        <i3dMapping id="unloadNode" node="0>0|7|4" />
+        <i3dMapping id="dischargeNode" node="0>0|7|5" />
+        <i3dMapping id="silageAdditivesTank_vis" node="0>0|8|0" />
+        <i3dMapping id="exactFillRootNodeAdditives" node="0>0|8|0|1" />
+        <i3dMapping id="chain02" node="0>0|9|5" />
+        <i3dMapping id="pickupEffect_target" node="0>1|2" />
+        <i3dMapping id="faro4010D_pickup_component2" node="1>" />
+        <i3dMapping id="groundReferenceNode" node="1>0" />
+        <i3dMapping id="pickupArm01Ref" node="1>1" />
+        <i3dMapping id="wheelAxisLeft" node="1>2|0" />
+        <i3dMapping id="wheelLeftBack" node="1>2|0|0|0" />
+        <i3dMapping id="wheelAxisRight" node="1>3|0" />
+        <i3dMapping id="wheelRightBack" node="1>3|0|0|0" />
+    </i3dMappings>
+</vehicle>
