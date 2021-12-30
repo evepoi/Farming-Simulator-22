@@ -248,7 +248,7 @@
         </soilEffects>
 
         <sounds>
-            <work template="DEFAULT_PLOW_WORK"/>
+            <stone template="stonePickupLoop" fadeOut="2.0"/>
         </sounds>
     </stonePicker>
 
@@ -298,7 +298,8 @@
             <animationNode node="chain" rotSpeed="550" rotAxis="1" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" turnOnFadeTime="1" turnOffFadeTime="1"/>
         </animationNodes>
         <sounds>
-            <work template="stonePickerLoop"/>
+            <work template="DEFAULT_PLOW_WORK" volumeScale="0.8"/>
+            <work template="stonePickerWorkLoop" linkNode="rotor"/>
         </sounds>
     </turnOnVehicle>
 

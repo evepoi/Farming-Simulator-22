@@ -195,7 +195,6 @@
         <licensePlate node="licensePlateBack"  position="BACK"  preferedType="ELONGATED" placementArea="0.1 0.26 0.1 0.26">
             <objectChange node="plateNumberLights02_01" visibilityActive="true" visibilityInactive="false" />
             <objectChange node="plateNumberLights02_02" visibilityActive="true" visibilityInactive="false" />
-            <objectChange node="licensePlateLightHigh"  visibilityActive="true" visibilityInactive="false" />
         </licensePlate>
     </licensePlates>
 
@@ -659,6 +658,7 @@
         <i3dMapping id="beaconLight01" node="0>0|2|0|0" />
         <i3dMapping id="beaconLight07" node="0>0|2|0|1" />
         <i3dMapping id="plateNumberLights02_01" node="0>0|2|0|2" />
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|0|2|0" />
         <i3dMapping id="plateNumberLights02_02" node="0>0|2|0|3" />
         <i3dMapping id="frontLight01Glass_static" node="0>0|2|1|2" />
         <i3dMapping id="frontLight02Glass_static" node="0>0|2|1|3" />
@@ -679,7 +679,6 @@
         <i3dMapping id="highBeamLow" node="0>0|2|2|1" />
         <i3dMapping id="frontLightHigh" node="0>0|2|2|2" />
         <i3dMapping id="highBeamHigh" node="0>0|2|2|3" />
-        <i3dMapping id="licensePlateLightHigh" node="0>0|2|2|4" />
         <i3dMapping id="workLightFrontLow" node="0>0|2|3|0" />
         <i3dMapping id="workLightBackLow" node="0>0|2|3|1" />
         <i3dMapping id="workLightFrontHigh1" node="0>0|2|3|2" />

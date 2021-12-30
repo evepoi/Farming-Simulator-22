@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>NOVA 330-ME</name>
+        <name>NOVA 330</name>
         <specs>
             <power>175</power>
             <maxSpeed>20</maxSpeed>
@@ -23,7 +23,7 @@
         <shopFoldingState>1</shopFoldingState>
         <shopTranslationOffset>0 -0.064 0</shopTranslationOffset>
         <shopRotationOffset>-0.285 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>4282880</vertexBufferMemoryUsage>
+        <vertexBufferMemoryUsage>4283136</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>1274624</indexBufferMemoryUsage>
         <textureMemoryUsage>5242880</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
@@ -573,7 +573,7 @@
             <info width="0.4" length="0.4" useRaycastHitPosition="true"/>
 
             <effects>
-                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           delay="0"   maxBending="0.75" positionUpdateNodes="pipeEffectSmoke" extraDistance="0.2"/>
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           delay="0"   maxBending="0.75" positionUpdateNodes="pipeEffectSmoke" extraDistance="0.1"/>
                 <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" delay="0.1" alignToWorldY="true"/>
             </effects>
         </dischargeNode>

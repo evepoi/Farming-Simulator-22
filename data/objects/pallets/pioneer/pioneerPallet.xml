@@ -23,8 +23,8 @@
         <category>pallets</category>
         <financeCategory>PURCHASE_SEEDS</financeCategory>
         <shopHeight>1.5</shopHeight>
-        <vertexBufferMemoryUsage>142080</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>24576</indexBufferMemoryUsage>
+        <vertexBufferMemoryUsage>133632</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>21760</indexBufferMemoryUsage>
         <textureMemoryUsage>1638400</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
@@ -77,7 +77,7 @@
 
     <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
 
-    <dynamicMount triggerNode="dynamicMountTrigger" />
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="6" additionalMountDistance="0.8" jointTransY="0.11" jointLimitToRotY="true"/>
 
     <tensionBeltObject>
         <meshNodes>

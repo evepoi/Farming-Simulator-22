@@ -3,14 +3,13 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>HK 25 + NS 3030-ME</name>
+        <name>HK 25 + NS 3030</name>
         <specs>
             <neededPower>125</neededPower>
             <workingWidth>3</workingWidth>
             <combination filterCategory="weights" filterSpec="weight" filterSpecMin="600" filterSpecMax="650"/>
         </specs>
         <functions>
-            <function>$l10n_function_cultivator</function>
             <function>$l10n_function_sowingMachine</function>
         </functions>
         <storePacks>
@@ -25,7 +24,7 @@
         <shopTranslationOffset>0 0 0.101</shopTranslationOffset>
         <shopRotationOffset>0 0.053 0</shopRotationOffset>
         <shopLoadingDelay initial="0.6"/>
-        <vertexBufferMemoryUsage>3900672</vertexBufferMemoryUsage>
+        <vertexBufferMemoryUsage>3900416</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>607744</indexBufferMemoryUsage>
         <textureMemoryUsage>2555904</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>

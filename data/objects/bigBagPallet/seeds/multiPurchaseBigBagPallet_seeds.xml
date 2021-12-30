@@ -16,7 +16,7 @@
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <rotation>0</rotation>
-        <brand>LIZARD</brand>
+        <brand>PIONEER</brand>
         <category>bigbagPallets</category>
         <financeCategory>PURCHASE_SEEDS</financeCategory>
         <vertexBufferMemoryUsage>768</vertexBufferMemoryUsage>
