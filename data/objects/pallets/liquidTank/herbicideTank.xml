@@ -8,7 +8,7 @@
             <function>$l10n_function_herbicideTank</function>
         </functions>
         <specs>
-            <capacity>2000</capacity>
+            <capacity>80000</capacity>
             <fillTypes>herbicide</fillTypes>
             <weight ignore="true"/>
         </specs>
