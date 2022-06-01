@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>HK 25 + NS 3030</name>
+        <name>HK 25 + NS 3030-ME</name>
         <specs>
             <neededPower>125</neededPower>
             <workingWidth>3</workingWidth>
@@ -44,6 +44,7 @@
 
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
     </base>
 
     <wheels>

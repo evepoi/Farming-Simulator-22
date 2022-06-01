@@ -6,6 +6,7 @@
         <name>Magnon CFS 530 DO-ME</name>
         <specs>
             <neededPower>300</neededPower>
+            <combination xmlFilename="$data/objects/pallets/bonsilage/bonsilagePallet.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_forageWagon</function>
@@ -18,8 +19,8 @@
         <category>loaderWagons</category>
         <shopTranslationOffset>0 0.027 0</shopTranslationOffset>
         <shopRotationOffset>0.727 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>6629632</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>1429760</indexBufferMemoryUsage>
+        <vertexBufferMemoryUsage>6631936</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1430016</indexBufferMemoryUsage>
         <textureMemoryUsage>3801088</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
@@ -38,6 +39,7 @@
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
         <sounds volumeFactor="1.4"/>
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>
@@ -458,7 +460,12 @@
         <fillVolumeConfigurations>
             <fillVolumeConfiguration>
                 <volumes>
-                    <volume node="fillVolume" fillUnitIndex="1" maxDelta="0.2" maxAllowedHeapAngle="10"/>
+                    <volume node="fillVolume" fillUnitIndex="1" maxDelta="0.2" maxAllowedHeapAngle="25"/>
+                </volumes>
+            </fillVolumeConfiguration>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" fillUnitIndex="1" maxDelta="0.8" maxAllowedHeapAngle="3"/>
                 </volumes>
             </fillVolumeConfiguration>
         </fillVolumeConfigurations>
@@ -519,6 +526,17 @@
             <dischargeStateSound template="dischargeLoop" pitchScale="1.0" volumeScale="1.4" fadeIn="1" fadeOut="1.7"/>
         </dischargeNode>
     </dischargeable>
+
+    <configurationSets title="$l10n_configuration_cover">
+        <configurationSet name="$l10n_configuration_valueNo">
+            <configuration name="cover" index="1"/>
+            <configuration name="fillVolume" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_configuration_valueYes">
+            <configuration name="cover" index="2"/>
+            <configuration name="fillVolume" index="2"/>
+        </configurationSet>
+    </configurationSets>
 
     <cover>
         <coverConfigurations>

@@ -6,6 +6,7 @@
         <name>SHUTTLE 490 S-ME</name>
         <specs>
             <neededPower>300</neededPower>
+            <combination xmlFilename="$data/objects/pallets/bonsilage/bonsilagePallet.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_forageWagon</function>
@@ -29,7 +30,7 @@
     <base>
         <typeDesc>$l10n_typeDesc_forageWagon</typeDesc>
         <filename>$data/vehicles/bergmann/shuttle490S/shuttle490S.i3d</filename>
-        <size width="3.8" length="13.5" lengthOffset="0.9"/>
+        <size width="4" length="12.5" lengthOffset="0.2"/>
         <speedLimit value="17" />
         <components maxMass="34000">
             <component centerOfMass="0 0.8 0.1" solverIterationCount="10" mass="11630" />
@@ -38,6 +39,7 @@
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
         <sounds volumeFactor="1.2"/>
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>

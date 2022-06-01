@@ -37,7 +37,7 @@
 
     <base>
         <filename>$data/objects/pallets/pioneer/pioneerPallet.i3d</filename>
-        <size width="2" length="2" />
+        <size width="1.4" length="1.2" height="0.9"/>
         <input allowed="false"/>
         <canBeReset>false</canBeReset>
         <components maxMass="850">
@@ -49,7 +49,7 @@
 
     <animations>
         <animation name="seedBagAnimation">
-            <part node="seedBags" startTime="0.0" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="41.01 0 0 0" shaderEndValues="0 0 0 0"/>
+            <part node="seedBags" startTime="0.0" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="41.01 0 0 0" shaderEndValues="-0.01 0 0 0"/>
             <part node="fillCollision01" startTime="0.143" endTime="1.0" startTrans="0 0 0" endTrans="0 0.095 0"/>
             <part node="fillCollision02" startTime="0.143" endTime="1.0" startTrans="0 0 0" endTrans="0 0.187 0"/>
             <part node="fillCollision03" startTime="0.143" endTime="1.0" startTrans="0 0 0" endTrans="0 0.284 0"/>

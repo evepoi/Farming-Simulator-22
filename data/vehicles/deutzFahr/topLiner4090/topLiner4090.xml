@@ -190,7 +190,7 @@
         </dashboards>
     </lights>
 
-    <licensePlates>
+    <licensePlates defaultPlacement="NONE">
         <licensePlate node="licensePlateFront" position="FRONT" preferedType="SQUARISH" placementArea="0.2 0.4 0.2 0.15"/>
         <licensePlate node="licensePlateBack"  position="BACK"  preferedType="ELONGATED" placementArea="0.1 0.26 0.1 0.26">
             <objectChange node="plateNumberLights02_01" visibilityActive="true" visibilityInactive="false" />
@@ -290,9 +290,11 @@
             <rotationNode node="attacherJointFrontRot" lowerRotation="24 0 0" upperRotation="-6 0 0" startRotation="0 0 0"/>
             <bottomArm rotationNode="feeder" referenceNode="feederReferencePoint" startRotation="6 0 0"/>
             <schema position="1 0" rotation="0" invertX="true" />
+            <attachSound template="HEADER_ATTACH_01" linkNode="attacherJointFront"/>
         </attacherJoint>
         <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="25 70 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
             <schema position="1 0" rotation="0" invertX="false"/>
+            <attachSound template="ATTACH_01" linkNode="trailerAttacherJointBack"/>
         </attacherJoint>
     </attacherJoints>
 

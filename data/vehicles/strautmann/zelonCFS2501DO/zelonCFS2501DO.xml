@@ -6,6 +6,7 @@
         <name>ZELON CFS 2501 DO-ME</name>
         <specs>
             <neededPower>95</neededPower>
+            <combination xmlFilename="$data/objects/pallets/bonsilage/bonsilagePallet.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_forageWagon</function>
@@ -38,6 +39,7 @@
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
         <sounds volumeFactor="0.9" />
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>

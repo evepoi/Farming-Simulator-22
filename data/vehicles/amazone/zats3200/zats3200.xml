@@ -17,6 +17,7 @@
         <rotation>0</rotation>
         <brand>AMAZONE</brand>
         <category>fertilizerSpreaders</category>
+        <shopLoadingDelay initial="0.15"/>
         <shopTranslationOffset>0 0.004 0</shopTranslationOffset>
         <shopRotationOffset>0 0 0</shopRotationOffset>
         <vertexBufferMemoryUsage>1975808</vertexBufferMemoryUsage>
@@ -36,6 +37,7 @@
             <component centerOfMass="0 0.3 0" solverIterationCount="10" mass="573"/>
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL" />
     </base>
 
     <powerConsumer ptoRpm="400" neededMaxPtoPower="15"/>

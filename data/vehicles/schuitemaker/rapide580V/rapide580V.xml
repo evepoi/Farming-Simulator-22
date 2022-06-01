@@ -6,6 +6,7 @@
         <name>Rapide 580V-ME</name>
         <specs>
             <neededPower>150</neededPower>
+            <combination xmlFilename="$data/objects/pallets/bonsilage/bonsilagePallet.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_forageWagon</function>
@@ -29,7 +30,7 @@
     <base>
         <typeDesc>$l10n_typeDesc_forageWagon</typeDesc>
         <filename>$data/vehicles/schuitemaker/rapide580V/rapide580V.i3d</filename>
-        <size width="3.8" length="9.5" lengthOffset="-0.2"/>
+        <size width="3.8" length="9.5" height="4.2" lengthOffset="-0.2"/>
         <speedLimit value="17" />
         <components maxMass="18000">
             <component centerOfMass="0 0.8 -0.3" solverIterationCount="10" mass="6200" />
@@ -39,8 +40,8 @@
             <joint component1="1" component2="3" node="axisJoint" rotLimit="10 0 0" transLimit="0 0 0" />
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
-
         <sounds volumeFactor="1.2" />
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>

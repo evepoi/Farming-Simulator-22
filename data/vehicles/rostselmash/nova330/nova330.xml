@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>NOVA 330</name>
+        <name>NOVA 330-ME</name>
         <specs>
             <power>175</power>
             <maxSpeed>20</maxSpeed>
@@ -307,9 +307,11 @@
             <rotationNode node="attacherJointCutterRot" lowerRotation="30 0 0" upperRotation="-12 0 0" />
             <bottomArm rotationNode="feederHouse" referenceNode="feederHouseRef" startRotation="0 0 0"/>
             <schema position="1 0" rotation="0" invertX="true" />
+            <attachSound template="HEADER_ATTACH_01" linkNode="attacherJointCutter"/>
         </attacherJoint>
         <attacherJoint node="trailerAttacherJoint" jointType="trailer" lowerRotLimit="25 53 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
             <schema position="1 0" rotation="0" invertX="false"/>
+            <attachSound template="ATTACH_01" linkNode="trailerAttacherJoint"/>
         </attacherJoint>
     </attacherJoints>
 

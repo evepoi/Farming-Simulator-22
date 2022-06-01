@@ -41,6 +41,7 @@
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
         <sounds volumeFactor="0.9" />
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>

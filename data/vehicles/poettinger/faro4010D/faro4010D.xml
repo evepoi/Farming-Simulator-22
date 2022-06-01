@@ -6,6 +6,7 @@
         <name>FARO 4010 D-ME</name>
         <specs>
             <neededPower>130</neededPower>
+            <combination xmlFilename="$data/objects/pallets/bonsilage/bonsilagePallet.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_forageWagon</function>
@@ -38,6 +39,7 @@
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
         <sounds volumeFactor="1.3" />
+        <mapHotspot type="TRAILER" />
     </base>
 
     <wheels>

@@ -38,6 +38,7 @@
             <joint component1="1" component2="2" node="drawbarComponentJoint" rotLimit="0 0 0" transLimit="0 0 0" />
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TOOL_TRAILED" />
     </base>
 
     <wheels>
